@@ -1,0 +1,17 @@
+<template name="layout">
+  <div class="container">
+    <header class = "navbar navbar-default" role = navigation>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{pathFor 'spotsList'}}">barking</a>
+      </div>
+    </header>
+
+    <h1>Welcome to barking!</h1>
+    <h4>The social parking app</h4>
+
+    <div id="main">
+      <!-- {{>buildings}} -->
+      {{> yield}}
+    </div>
+  </div>
+</template>
